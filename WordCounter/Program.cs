@@ -1,7 +1,13 @@
 using System;
-using Scrabble.Models;
+
 
 namespace Program
 {
+  public class Run
+  {
+    public static void Main()
+    {
 
+    }
+  }
 }
