@@ -18,7 +18,7 @@ namespace WordCounter.TestTools
     [TestMethod]
     public void WordCounter_VerifyWord_ReturnTrueIfvalid()
     {
-      string tester = "Well";
+      string tester = "well";
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(true, length);
 
@@ -27,7 +27,7 @@ namespace WordCounter.TestTools
     [TestMethod]
     public void WordCounter_VerifyWord_ReturnFlaseflaseIfSpecialChar()
     {
-      string tester = "Wel.l";
+      string tester = "We.l.l";
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(false, length);
 
