@@ -42,7 +42,7 @@ namespace WordCounter.Models
     public static double Percent(int found, int total)
     {
       double percentage = Math.Round(((double)found / (double)total * 100.0), 2);
-      return (double)found;
+      return percentage;
     }
     public static int CountTotalWords(string sentence)
     {
