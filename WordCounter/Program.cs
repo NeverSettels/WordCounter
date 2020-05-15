@@ -44,6 +44,9 @@ namespace Program
       TypeSlow("Would you like to do antoher? Y/N ");
       string response = Console.ReadLine().ToLower();
       if (response == "y") RunIt();
+      TypeSlow("Glad I could Help!");
+      TypeSlow("----------------------------------------------------------------------");
+      TypeSlow("Have a great day!");
     }
     public static void Main()
     {
