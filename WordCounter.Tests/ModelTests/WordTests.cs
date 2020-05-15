@@ -32,5 +32,14 @@ namespace WordCounter.TestTools
       Assert.AreEqual(false, length);
 
     }
+
+    [TestMethod]
+    public void WordCounter_RemoveSpecail_TakeInvalidCharsOut()
+    {
+      string tester = "dogs, are great. companions!";
+      string edited = RepeatCounter.RemoveSpecial(tester);
+      Assert.AreEqual("dogs are great companions", edited);
+
+    }
   }
 }

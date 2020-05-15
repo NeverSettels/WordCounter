@@ -21,21 +21,23 @@ namespace WordCounter.Models
       return true;
     }
 
-    public static string RemoveSpecial(int word)
+    public static string RemoveSpecial(string word)
     {
+      return word;
+      word = word.ToLower();
       string editedString = "";
       foreach (char character in word)
       {
         if ((int)character == 32)
         {
-          editedString += (str)character;
+          editedString += character;
         }
         else if ((int)character >= 97 && (int)character <= 122)
         {
-          editedString += (str)character;
+          editedString += character;
         }
-        return word;
       }
+      return word;
     }
   }
 
