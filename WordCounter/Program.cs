@@ -30,14 +30,24 @@ namespace Program
       }
 
     }
-    public static void Main()
+
+    public static void RunIt()
     {
       TypeSlow("Enter a Sentence to count words in: ");
       string sentence = Console.ReadLine();
       string word = Validate();
       int counted = RepeatCounter.CountWords(word, sentence);
       double percent = RepeatCounter.Percent(counted, RepeatCounter.CountTotalWords(sentence));
+      TypeSlow("----------------------------------------------------------------------");
       TypeSlow($"{word} appears {counted} times and makes up {percent}% of the total sentence");
+      TypeSlow("----------------------------------------------------------------------");
+      TypeSlow("Would you like to do antoher? Y/N ");
+      string response = Console.ReadLine().ToLower();
+      if (response == "y") RunIt();
+    }
+    public static void Main()
+    {
+      RunIt();
     }
   }
 }
