@@ -33,6 +33,7 @@ There are no known bugs at the time of this update.
 | **User enters a sentence program verfies that is longer than 1 word** | User Input: ”dogs are great companions” | Output: True |
 | **Program takes user input and fliter out special characters** | User Input: ”dogs, are great. companions!” | Output: ”dogs are great companions” |
 | **Program takes user word and count them in the updated sentence!** | User Input: "dogs", ”dogs, are great. companions! and dogs make me happy” | Output: "2”  |
+| **Program takes user word and count them in the updated sentence and prints what percentage of that sentence is that word** | User Input: "dogs", ”dogs, are great. companions! and dogs make me happy” | Output: "dogs appears 2 times and makes up 22.22% of the total sentence"|
 
 ## License
 This software is licensed under the MIT license.
