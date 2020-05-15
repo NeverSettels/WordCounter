@@ -6,7 +6,11 @@ namespace WordCounter.Models
   {
     public static bool VerifyWord(string word)
     {
-      return true;
+      if (word.Length > 1)
+      {
+        return false;
+      }
+      return false;
     }
   }
 
