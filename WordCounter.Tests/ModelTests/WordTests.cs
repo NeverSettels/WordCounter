@@ -41,5 +41,14 @@ namespace WordCounter.TestTools
       Assert.AreEqual("dogs are great companions", edited);
 
     }
+
+    [TestMethod]
+    public void WordCounter_CountWords_ReturnNumber()
+    {
+      string tester = "dogs, are great. companions! dogs are the best";
+      int counted = RepeatCounter.CountWords("dogs", tester);
+      Assert.AreEqual(2, counted);
+
+    }
   }
 }

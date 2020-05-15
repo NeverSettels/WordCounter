@@ -38,6 +38,21 @@ namespace WordCounter.Models
       }
       return editedString;
     }
+
+    public static int CountWords(string word, string sentence)
+    {
+      int counter = 0;
+      sentence = RemoveSpecial(sentence);
+      string[] sentenceArr = sentence.Split(" ");
+      foreach (string wordTBChecked in sentenceArr)
+      {
+        if (word == wordTBChecked)
+        {
+          counter++;
+        }
+      }
+      return 0;
+    }
   }
 
 }
