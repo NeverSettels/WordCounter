@@ -44,7 +44,7 @@ namespace WordCounter.Models
       int counter = 0;
       sentence = RemoveSpecial(sentence);
       string[] sentenceArr = sentence.Split(" ");
-      //counter = sentenceArr.Length;
+      counter = sentenceArr.Length;
       return counter;
     }
     public static int CountWords(string word, string sentence)
