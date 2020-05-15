@@ -26,14 +26,15 @@ There are no known bugs at the time of this update.
 * .NET Core
 * Git and GitHub
 
-### Specs
+## Specs
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
-| **User enters a word and program verifies that there are no special charccters** | User Input:”dog” | Output: True|
-| **User enters a sentence program verfies that is longer than 1 word** | User Input:”dog” | Output: "5" |
-| **Program displays error message if non alphabetical characters are used** | User Input:”123” | Output: "Don't be a jerk." |
+| **User enters a word and program verifies that there are no special charcters** | User Input: ”dog” | Output: True|
+| **User enters a sentence program verfies that is longer than 1 word** | User Input: ”dogs are great companions” | Output: True |
+| **Program takes user input and fliter out special characters** | User Input: ”dogs, are great. companions!” | Output: ”dogs are great companions” |
+| **Program takes user word and count them in the updated sentence!** | User Input: "dogs", ”dogs, are great. companions! and dogs make me happy” | Output: "2”  |
 
-### License
+## License
 This software is licensed under the MIT license.
 
 Copyright (c) 2020 **Eric Settels_**
