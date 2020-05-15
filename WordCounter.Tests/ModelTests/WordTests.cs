@@ -13,7 +13,6 @@ namespace WordCounter.TestTools
       string tester = "W";
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(false, length);
-
     }
     [TestMethod]
     public void WordCounter_VerifyWord_ReturnTrueIfvalid()
@@ -21,7 +20,6 @@ namespace WordCounter.TestTools
       string tester = "well";
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(true, length);
-
     }
 
     [TestMethod]
@@ -30,7 +28,6 @@ namespace WordCounter.TestTools
       string tester = "We.l.l";
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(false, length);
-
     }
 
     [TestMethod]
@@ -39,15 +36,14 @@ namespace WordCounter.TestTools
       string tester = "dogs, are great. companions!";
       string edited = RepeatCounter.RemoveSpecial(tester);
       Assert.AreEqual("dogs are great companions", edited);
-
     }
+
     [TestMethod]
     public void WordCounter_CountTotalWords_ReturnNumber()
     {
       string tester = "dogs, are great. companions! dogs are the best";
       int counted = RepeatCounter.CountTotalWords(tester);
       Assert.AreEqual(8, counted);
-
     }
 
     [TestMethod]
@@ -56,7 +52,6 @@ namespace WordCounter.TestTools
       string tester = "dogs, are great. companions! dogs are the best";
       int counted = RepeatCounter.CountWords("dogs", tester);
       Assert.AreEqual(2, counted);
-
     }
 
     [TestMethod]
