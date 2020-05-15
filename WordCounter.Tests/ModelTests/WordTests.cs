@@ -58,5 +58,14 @@ namespace WordCounter.TestTools
       Assert.AreEqual(2, counted);
 
     }
+
+    [TestMethod]
+    public void WordCounter_Percent_returnDouble()
+    {
+      string tester = "dogs, are great. companions! dogs are the best";
+      double counted = RepeatCounter.Percent(1, 4);
+      Assert.AreEqual(25, counted);
+
+    }
   }
 }
