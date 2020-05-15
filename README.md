@@ -37,4 +37,4 @@ There are no known bugs at the time of this update.
 ## License
 This software is licensed under the MIT license.
 
-Copyright (c) 2020 **Eric Settels_**
+Copyright (c) 2020 **_Eric Settels_**
