@@ -15,6 +15,15 @@ namespace Program
       }
       Console.WriteLine();
     }
+    public static void TypeFast(string str)
+    {
+      for (int i = 0; i < str.Length; i++)
+      {
+        Console.Write(str[i]);
+        System.Threading.Thread.Sleep(5);
+      }
+      Console.WriteLine();
+    }
     public static string Validate()
     {
       TypeSlow("Enter a word to count: ");
@@ -38,15 +47,18 @@ namespace Program
       string word = Validate();
       int counted = RepeatCounter.CountWords(word, sentence);
       double percent = RepeatCounter.Percent(counted, RepeatCounter.CountTotalWords(sentence));
-      TypeSlow("----------------------------------------------------------------------");
+      TypeFast("----------------------------------------------------------------------");
       TypeSlow($"{word} appears {counted} times and makes up {percent}% of the total sentence");
-      TypeSlow("----------------------------------------------------------------------");
+      TypeFast("----------------------------------------------------------------------");
       TypeSlow("Would you like to do antoher? Y/N ");
       string response = Console.ReadLine().ToLower();
       if (response == "y") RunIt();
-      TypeSlow("Glad I could Help!");
-      TypeSlow("----------------------------------------------------------------------");
-      TypeSlow("Have a great day!");
+      else
+      {
+        TypeSlow("Glad I could Help!");
+        TypeFast("----------------------------------------------------------------------");
+        TypeSlow("Have a great day!");
+      }
     }
     public static void Main()
     {
