@@ -43,7 +43,7 @@ namespace Program
     {
       Console.WriteLine();
       Random random = new Random();
-      char[] possibleOptions = { '-', '/', '|', '*', '$', '@', '^' };
+      char[] possibleOptions = { '-', '/', '|' };
       for (int i = 0; i < 60; i++)
       {
         Console.Write(possibleOptions[random.Next(0, possibleOptions.Length)]);
