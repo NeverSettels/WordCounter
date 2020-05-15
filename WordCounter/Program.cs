@@ -1,7 +1,6 @@
 using System;
 using WordCounter.Models;
 
-
 namespace Program
 {
   public class Run
@@ -37,7 +36,6 @@ namespace Program
         TypeSlow("Sorry! that wont work! try again....");
         return Validate();
       }
-
     }
     public static void JustForFun()
     {
@@ -52,7 +50,6 @@ namespace Program
       Console.WriteLine();
       Console.WriteLine();
     }
-
     public static void RunIt()
     {
       TypeSlow("Enter a Sentence to count words in: ");

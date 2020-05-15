@@ -20,7 +20,6 @@ namespace WordCounter.Models
       }
       return true;
     }
-
     public static string RemoveSpecial(string word)
     {
       word = word.ToLower();
@@ -38,7 +37,6 @@ namespace WordCounter.Models
       }
       return editedString;
     }
-
     public static double Percent(int found, int total)
     {
       double percentage = Math.Round(((double)found / (double)total * 100.0), 2);

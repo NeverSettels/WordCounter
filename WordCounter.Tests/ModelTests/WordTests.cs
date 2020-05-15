@@ -21,7 +21,6 @@ namespace WordCounter.TestTools
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(true, length);
     }
-
     [TestMethod]
     public void WordCounter_VerifyWord_ReturnFlaseflaseIfSpecialChar()
     {
@@ -29,7 +28,6 @@ namespace WordCounter.TestTools
       bool length = RepeatCounter.VerifyWord(tester);
       Assert.AreEqual(false, length);
     }
-
     [TestMethod]
     public void WordCounter_RemoveSpecail_TakeInvalidCharsOut()
     {
@@ -45,7 +43,6 @@ namespace WordCounter.TestTools
       int counted = RepeatCounter.CountTotalWords(tester);
       Assert.AreEqual(8, counted);
     }
-
     [TestMethod]
     public void WordCounter_CountWords_ReturnNumber()
     {
