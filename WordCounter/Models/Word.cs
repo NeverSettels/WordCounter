@@ -37,7 +37,7 @@ namespace WordCounter.Models
           editedString += character;
         }
       }
-      return word;
+      return editedString;
     }
   }
 
