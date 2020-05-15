@@ -39,6 +39,19 @@ namespace Program
       }
 
     }
+    public static void JustForFun()
+    {
+      Console.WriteLine();
+      Random random = new Random();
+      char[] possibleOptions = { '-', '/', '|', '*', '$', '@', '^' };
+      for (int i = 0; i < 60; i++)
+      {
+        Console.Write(possibleOptions[random.Next(0, possibleOptions.Length)]);
+        System.Threading.Thread.Sleep(50);
+      }
+      Console.WriteLine();
+      Console.WriteLine();
+    }
 
     public static void RunIt()
     {
@@ -47,16 +60,16 @@ namespace Program
       string word = Validate();
       int counted = RepeatCounter.CountWords(word, sentence);
       double percent = RepeatCounter.Percent(counted, RepeatCounter.CountTotalWords(sentence));
-      TypeFast("----------------------------------------------------------------------");
+      JustForFun();
       TypeSlow($"{word} appears {counted} times and makes up {percent}% of the total sentence");
-      TypeFast("----------------------------------------------------------------------");
+      JustForFun();
       TypeSlow("Would you like to do antoher? Y/N ");
       string response = Console.ReadLine().ToLower();
       if (response == "y") RunIt();
       else
       {
         TypeSlow("Glad I could Help!");
-        TypeFast("----------------------------------------------------------------------");
+        JustForFun();
         TypeSlow("Have a great day!");
       }
     }
