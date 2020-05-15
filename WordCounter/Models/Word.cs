@@ -51,7 +51,7 @@ namespace WordCounter.Models
           counter++;
         }
       }
-      return 0;
+      return counter;
     }
   }
 
