@@ -35,7 +35,8 @@ namespace Program
       string sentence = Console.ReadLine();
       string word = Validate();
       int counted = RepeatCounter.CountWords(word, sentence);
-      TypeSlow($"{word} appears {counted} times in that sentence!");
+      double percent = RepeatCounter.Percent(counted, RepeatCounter.CountTotalWords(sentence));
+      TypeSlow($"{word} appears {counted} times and makes up {percent}% of the total sentence");
     }
   }
 }
