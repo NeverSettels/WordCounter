@@ -39,6 +39,14 @@ namespace WordCounter.Models
       return editedString;
     }
 
+    public static int CountTotalWords(string sentence)
+    {
+      int counter = 0;
+      sentence = RemoveSpecial(sentence);
+      string[] sentenceArr = sentence.Split(" ");
+      //counter = sentenceArr.Length;
+      return counter;
+    }
     public static int CountWords(string word, string sentence)
     {
       int counter = 0;
