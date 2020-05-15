@@ -23,7 +23,6 @@ namespace WordCounter.Models
 
     public static string RemoveSpecial(string word)
     {
-      return word;
       word = word.ToLower();
       string editedString = "";
       foreach (char character in word)
